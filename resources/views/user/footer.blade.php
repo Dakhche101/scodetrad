@@ -8,22 +8,22 @@
         <div class="col-md-3 col-sm-6">
           <h4>Suivez-Nous</h4>
           <ul class="list-unstyled">
-            <li><a href="#"><i class="bi bi-facebook"></i> facebook</a></li>
-            <li><a href="#"><i class="bi bi-linkedin"></i> linkedin</a></li>
-            <li><a href="#"><i class="bi bi-instagram"></i >instagram</a></li>
+            <li><i class="bi bi-facebook"></i> facebook</li>
+            <li><i class="bi bi-linkedin"></i> linkedin</li>
+            <li><i class="bi bi-instagram"></i >instagram</li>
           </ul>
         </div>
       <div class="col-md-3 col-sm-6">
         <h4>Nos Produit</h4>
         <ul class="list-unstyled">
-          <li><a href="#">Sanitaire</a></li>
-          <li><a href="#">Carellage</a></li>
-          <li><a href="#">Robinettrie</a></li>
+          <li>Sanitaire</li>
+          <li>Carellage</li>
+          <li>Robinettrie</li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-6">
         <h4>Contacter-Nous</h4>
-        <p>123 Main Street<br>City, State ZIP<br>Phone: 555-555-5555<br>Email: scodetrad.temara@gmail.com</p>
+        <p>Address : 1556 Hay El Maghreg Arab <br>Av Moulay Ali Chrif Massira II-Temara<br>Phone: +212 641-972767<br>Email: scodetrad.temara@gmail.com</p>
       </div>
     </div>
 </div>

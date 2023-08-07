@@ -7,14 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* ─────────────────────────────────────────────────────────
-/* ------------------ C S S   S T A R T --------------------
-/* ───────────────────────────────────────────────────────── */
-
-/* ─── IMPORTATION ───────────────────────────────────────── */
 @import url("reset.min.css");
 
-/* ─── BASE ──────────────────────────────────────────────── */
 body {
 	font-family: "PT Mono", sans-serif;
 	font-size: 16px;
@@ -23,7 +17,6 @@ body {
 	background-color: #7d8595;
 }
 
-/* ─── LAYOUT ────────────────────────────────────────────── */
 #l-constrained {
 	width: 100%;
 	max-width: 1440px;
@@ -34,7 +27,6 @@ body {
 	height: 100vh;
 }
 
-/* ─── MODULE ────────────────────────────────────────────── */
 .page-title {
 	margin-bottom: 2em;
 	width: 100%;
@@ -167,7 +159,6 @@ body {
 	gap: 1em;
 }
 
-/* ─── RESPONSIVE ────────────────────────────────────────── */
 @media screen and (max-width: 1200px) {
 }
 @media screen and (max-width: 1024px) {
@@ -207,8 +198,6 @@ body {
 <body>
     @include('user.navbar')
 <br>
-
-<!-- CONTENT -->
 <main id="l-content">
 	<div id="l-constrained">
 		<div class="credit-card__container">
@@ -218,7 +207,9 @@ body {
 					<img class="master-card" src="https://xgjzloifyvgpbmyonaya.supabase.co/storage/v1/object/public/files/wROkdug6ax/original" alt="ship card">
 				</div>
 				<div class="credit-card__form">
+					<!-- form -->
 					<form action="">
+						@csrf
 						<div class="field">
 							<label for="card-number-1">Numéro de carte</label>
 							<div class="flex-input card-number__numbers">

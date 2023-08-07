@@ -27,7 +27,7 @@ class Homecontroller extends Controller
     public function redirect(){
         $user=Auth::user()->usertype;
         if($user=='1'){
-            return view('home.admin');
+            return redirect('product');
         }elseif($user=='2'){
             return view('livreur.home');
         }else{

@@ -85,7 +85,8 @@ nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after
 }
 .containers {
   position: relative;
-  height: 100vh; /* Adjust this as needed */
+  height: 100vh;
+  backdrop-filter: blur(5px);
 }
 
 .content {
@@ -93,11 +94,27 @@ nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* Styles for the centered content */
 }
 
 
+#returnBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
 
+#returnBtn:hover {
+  background-color: #0056b3;
+}
 
 
 
@@ -145,10 +162,7 @@ nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after
         <a class="nav-link text-dark" href="/register"><li>BOUTIQUE</li></a>
 
             </li>
-                <li class="nav-item">
-        <a class="nav-link text-dark" href="#"><li>CONTACT</li></a>
-
-            </li>
+              
             </ul>
         </div>
     </div>
@@ -166,12 +180,6 @@ nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after
         <span style="margin-left:45px; font-family: 'Asap Condensed', sans-serif;" class="h1 text-white">
         selon vos goûts
         </span>
-    </div>
-    <div style="margin-left:100px" class="socialLink">
-        <a href="#">fb</a>
-        <a href="#">insta</a>
-        <a href="#">whatsapp</a>
-        <a href="#">limkdin</a>
     </div>
     </div>
     
@@ -234,6 +242,26 @@ changeClassOnWidth();
 
 // Call the function when the window is resized
 window.addEventListener('resize', changeClassOnWidth);
+window.onscroll = function() {
+  showReturnButton();
+};
+
+function showReturnButton() {
+  var returnButton = document.getElementById('returnBtn');
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    returnButton.style.display = 'block';
+  } else {
+    returnButton.style.display = 'none';
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
 </script>
+<button onclick="scrollToTop()" id="returnBtn" title="Return to Top" class="btn btn-danger">↑</button>
 </body>
 </html>

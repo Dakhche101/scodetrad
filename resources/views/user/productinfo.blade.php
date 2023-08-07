@@ -25,7 +25,6 @@
       </div>
       <div class="col-md-6">
         <h1 class="h2">{{$product->title}}</h1>
-        <h1 class="h2">{{$product->id}}</h1>
         <div class="tp-product-rating-icon tp-product-rating-icon-2">
                                                 <span><i class="fa-solid fa-star"></i></span>
                                                 <span><i class="fa-solid fa-star"></i></span>

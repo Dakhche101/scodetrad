@@ -5,8 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Homecontroller;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\StripepayementController;
-
+use App\Http\Controllers\PayementController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,8 +50,5 @@ Route::get('redirect/delete/{id}',[Homecontroller::class,'deleteproduct'])->name
 Route::get('redirect/comandes/affecter/{id}',[Homecontroller::class,'affecter']);
 Route::get('redirect/comandes/save/{comande}/{livreur}',[Homecontroller::class,'saveaffecter'])->name('hz');
 Route::get('redirect/livreur',[Homecontroller::class,'livreur']);
-
-
-
 
 // aws carosrelle
